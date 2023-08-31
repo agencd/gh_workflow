@@ -1,0 +1,16 @@
+name: My Second Automation
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: I want to run a linux command
+        run: echo "Hello, Students"
